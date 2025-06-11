@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Showcase</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="slider.css">
+</head>
+<body class="p-4 md:p-8">
+    <!-- Main Container -->
+    <div class="max-w-6xl mx-auto">
+        <!-- Header Section -->
+        <div class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-purple-400 to-blue-500 bg-clip-text text-transparent">Skills Showcase</h1>
+            <p class="text-lg text-gray-300">Explore my technical expertise and creative abilities</p>
+        </div>
+        
+        <!-- Tab Navigation -->
+        <div class="flex flex-wrap justify-center gap-4 mb-8">
+            <button class="tab active px-6 py-3 rounded-full border-2 border-transparent font-medium" data-tab="cards">
+                Skill Cards
+            </button>
+            <button class="tab px-6 py-3 rounded-full border-2 border-transparent font-medium" data-tab="slider">
+                Skill Slider
+            </button>
+        </div>
+        
+        <!-- Cards Section -->
+        <div id="cards-section" class="content-section active">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- HTML Card -->
+                <div class="skill-card rounded-xl p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-lg bg-orange-500 flex items-center justify-center mr-4">
+                            <div class="skill-icon text-2xl font-bold text-white">&lt;/&gt;</div>
+                        </div>
+                        <h3 class="text-xl font-semibold">HTML</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4">Semantic markup, accessibility, and modern HTML5 features</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill bg-orange-500" style="width: 0%;" data-width="95%"></div>
+                    </div>
+                    <div class="flex justify-between mt-2">
+                        <span class="text-xs text-gray-400">Proficiency</span>
+                        <span class="text-xs font-medium">95%</span>
+                    </div>
+                </div>
+                
+                <!-- CSS Card -->
+                <div class="skill-card rounded-xl p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-lg bg-blue-500 flex items-center justify-center mr-4">
+                            <div class="skill-icon text-2xl font-bold text-white">{}</div>
+                        </div>
+                        <h3 class="text-xl font-semibold">CSS</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4">Responsive design, animations, and modern layouts</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill bg-blue-500" style="width: 0%;" data-width="90%"></div>
+                    </div>
+                    <div class="flex justify-between mt-2">
+                        <span class="text-xs text-gray-400">Proficiency</span>
+                        <span class="text-xs font-medium">90%</span>
+                    </div>
+                </div>
+                
+                <!-- JavaScript Card -->
+                <div class="skill-card rounded-xl p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-lg bg-yellow-500 flex items-center justify-center mr-4">
+                            <div class="skill-icon text-2xl font-bold text-white">JS</div>
+                        </div>
+                        <h3 class="text-xl font-semibold">JavaScript</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4">ES6+, DOM manipulation, and interactive web experiences</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill bg-yellow-500" style="width: 0%;" data-width="85%"></div>
+                    </div>
+                    <div class="flex justify-between mt-2">
+                        <span class="text-xs text-gray-400">Proficiency</span>
+                        <span class="text-xs font-medium">85%</span>
+                    </div>
+                </div>
+                
+                <!-- Java Card -->
+                <div class="skill-card rounded-xl p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-lg bg-red-500 flex items-center justify-center mr-4">
+                            <div class="skill-icon text-2xl font-bold text-white">☕</div>
+                        </div>
+                        <h3 class="text-xl font-semibold">Java</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4">OOP principles, enterprise applications, and Android development</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill bg-red-500" style="width: 0%;" data-width="80%"></div>
+                    </div>
+                    <div class="flex justify-between mt-2">
+                        <span class="text-xs text-gray-400">Proficiency</span>
+                        <span class="text-xs font-medium">80%</span>
+                    </div>
+                </div>
+                
+                <!-- C Card -->
+                <div class="skill-card rounded-xl p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-lg bg-blue-700 flex items-center justify-center mr-4">
+                            <div class="skill-icon text-2xl font-bold text-white">C</div>
+                        </div>
+                        <h3 class="text-xl font-semibold">C</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4">System programming, algorithms, and memory management</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill bg-blue-700" style="width: 0%;" data-width="75%"></div>
+                    </div>
+                    <div class="flex justify-between mt-2">
+                        <span class="text-xs text-gray-400">Proficiency</span>
+                        <span class="text-xs font-medium">75%</span>
+                    </div>
+                </div>
+                
+                <!-- Canva Card -->
+                <div class="skill-card rounded-xl p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-lg bg-purple-500 flex items-center justify-center mr-4">
+                            <div class="skill-icon text-2xl font-bold text-white">🎨</div>
+                        </div>
+                        <h3 class="text-xl font-semibold">Canva</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4">Graphic design, social media assets, and presentations</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill bg-purple-500" style="width: 0%;" data-width="90%"></div>
+                    </div>
+                    <div class="flex justify-between mt-2">
+                        <span class="text-xs text-gray-400">Proficiency</span>
+                        <span class="text-xs font-medium">90%</span>
+                    </div>
+                </div>
+                
+                <!-- After Effects Card -->
+                <div class="skill-card rounded-xl p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-lg bg-indigo-600 flex items-center justify-center mr-4">
+                            <div class="skill-icon text-2xl font-bold text-white">Ae</div>
+                        </div>
+                        <h3 class="text-xl font-semibold">After Effects</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4">Motion graphics, visual effects, and animations</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill bg-indigo-600" style="width: 0%;" data-width="85%"></div>
+                    </div>
+                    <div class="flex justify-between mt-2">
+                        <span class="text-xs text-gray-400">Proficiency</span>
+                        <span class="text-xs font-medium">85%</span>
+                    </div>
+                </div>
+                
+                <!-- Premiere Pro Card -->
+                <div class="skill-card rounded-xl p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-lg bg-pink-600 flex items-center justify-center mr-4">
+                            <div class="skill-icon text-2xl font-bold text-white">Pr</div>
+                        </div>
+                        <h3 class="text-xl font-semibold">Premiere Pro</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4">Video editing, color grading, and audio mixing</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill bg-pink-600" style="width: 0%;" data-width="80%"></div>
+                    </div>
+                    <div class="flex justify-between mt-2">
+                        <span class="text-xs text-gray-400">Proficiency</span>
+                        <span class="text-xs font-medium">80%</span>
+                    </div>
+                </div>
+                
+                <!-- DaVinci Resolve Card -->
+                <div class="skill-card rounded-xl p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-lg bg-green-600 flex items-center justify-center mr-4">
+                            <div class="skill-icon text-2xl font-bold text-white">Dr</div>
+                        </div>
+                        <h3 class="text-xl font-semibold">DaVinci Resolve</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4">Professional color grading, editing, and visual effects</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill bg-green-600" style="width: 0%;" data-width="75%"></div>
+                    </div>
+                    <div class="flex justify-between mt-2">
+                        <span class="text-xs text-gray-400">Proficiency</span>
+                        <span class="text-xs font-medium">75%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Slider Section -->
+        <div id="slider-section" class="content-section">
+            <div class="slider-container relative">
+                <div class="slider-track">
+                    <!-- HTML Slider Card -->
+                    <div class="slider-card skill-card rounded-xl p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-lg bg-orange-500 flex items-center justify-center mr-4">
+                                <div class="skill-icon text-2xl font-bold text-white">&lt;/&gt;</div>
+                            </div>
+                            <h3 class="text-xl font-semibold">HTML</h3>
+                        </div>
+                        <p class="text-gray-300 mb-4">Semantic markup, accessibility, and modern HTML5 features</p>
+                        <div class="progress-bar">
+                            <div class="progress-fill bg-orange-500" style="width: 95%;"></div>
+                        </div>
+                        <div class="flex justify-between mt-2">
+                            <span class="text-xs text-gray-400">Proficiency</span>
+                            <span class="text-xs font-medium">95%</span>
+                        </div>
+                    </div>
+                    
+                    <!-- CSS Slider Card -->
+                    <div class="slider-card skill-card rounded-xl p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-lg bg-blue-500 flex items-center justify-center mr-4">
+                                <div class="skill-icon text-2xl font-bold text-white">{}</div>
+                            </div>
+                            <h3 class="text-xl font-semibold">CSS</h3>
+                        </div>
+                        <p class="text-gray-300 mb-4">Responsive design, animations, and modern layouts</p>
+                        <div class="progress-bar">
+                            <div class="progress-fill bg-blue-500" style="width: 90%;"></div>
+                        </div>
+                        <div class="flex justify-between mt-2">
+                            <span class="text-xs text-gray-400">Proficiency</span>
+                            <span class="text-xs font-medium">90%</span>
+                        </div>
+                    </div>
+                    
+                    <!-- JavaScript Slider Card -->
+                    <div class="slider-card skill-card rounded-xl p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-lg bg-yellow-500 flex items-center justify-center mr-4">
+                                <div class="skill-icon text-2xl font-bold text-white">JS</div>
+                            </div>
+                            <h3 class="text-xl font-semibold">JavaScript</h3>
+                        </div>
+                        <p class="text-gray-300 mb-4">ES6+, DOM manipulation, and interactive web experiences</p>
+                        <div class="progress-bar">
+                            <div class="progress-fill bg-yellow-500" style="width: 85%;"></div>
+                        </div>
+                        <div class="flex justify-between mt-2">
+                            <span class="text-xs text-gray-400">Proficiency</span>
+                            <span class="text-xs font-medium">85%</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Java Slider Card -->
+                    <div class="slider-card skill-card rounded-xl p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-lg bg-red-500 flex items-center justify-center mr-4">
+                                <div class="skill-icon text-2xl font-bold text-white">☕</div>
+                            </div>
+                            <h3 class="text-xl font-semibold">Java</h3>
+                        </div>
+                        <p class="text-gray-300 mb-4">OOP principles, enterprise applications, and Android development</p>
+                        <div class="progress-bar">
+                            <div class="progress-fill bg-red-500" style="width: 80%;"></div>
+                        </div>
+                        <div class="flex justify-between mt-2">
+                            <span class="text-xs text-gray-400">Proficiency</span>
+                            <span class="text-xs font-medium">80%</span>
+                        </div>
+                    </div>
+                    
+                    <!-- C Slider Card -->
+                    <div class="slider-card skill-card rounded-xl p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-lg bg-blue-700 flex items-center justify-center mr-4">
+                                <div class="skill-icon text-2xl font-bold text-white">C</div>
+                            </div>
+                            <h3 class="text-xl font-semibold">C</h3>
+                        </div>
+                        <p class="text-gray-300 mb-4">System programming, algorithms, and memory management</p>
+                        <div class="progress-bar">
+                            <div class="progress-fill bg-blue-700" style="width: 75%;"></div>
+                        </div>
+                        <div class="flex justify-between mt-2">
+                            <span class="text-xs text-gray-400">Proficiency</span>
+                            <span class="text-xs font-medium">75%</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Canva Slider Card -->
+                    <div class="slider-card skill-card rounded-xl p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-lg bg-purple-500 flex items-center justify-center mr-4">
+                                <div class="skill-icon text-2xl font-bold text-white">🎨</div>
+                            </div>
+                            <h3 class="text-xl font-semibold">Canva</h3>
+                        </div>
+                        <p class="text-gray-300 mb-4">Graphic design, social media assets, and presentations</p>
+                        <div class="progress-bar">
+                            <div class="progress-fill bg-purple-500" style="width: 90%;"></div>
+                        </div>
+                        <div class="flex justify-between mt-2">
+                            <span class="text-xs text-gray-400">Proficiency</span>
+                            <span class="text-xs font-medium">90%</span>
+                        </div>
+                    </div>
+                    
+                    <!-- After Effects Slider Card -->
+                    <div class="slider-card skill-card rounded-xl p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-lg bg-indigo-600 flex items-center justify-center mr-4">
+                                <div class="skill-icon text-2xl font-bold text-white">Ae</div>
+                            </div>
+                            <h3 class="text-xl font-semibold">After Effects</h3>
+                        </div>
+                        <p class="text-gray-300 mb-4">Motion graphics, visual effects, and animations</p>
+                        <div class="progress-bar">
+                            <div class="progress-fill bg-indigo-600" style="width: 85%;"></div>
+                        </div>
+                        <div class="flex justify-between mt-2">
+                            <span class="text-xs text-gray-400">Proficiency</span>
+                            <span class="text-xs font-medium">85%</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Premiere Pro Slider Card -->
+                    <div class="slider-card skill-card rounded-xl p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-lg bg-pink-600 flex items-center justify-center mr-4">
+                                <div class="skill-icon text-2xl font-bold text-white">Pr</div>
+                            </div>
+                            <h3 class="text-xl font-semibold">Premiere Pro</h3>
+                        </div>
+                        <p class="text-gray-300 mb-4">Video editing, color grading, and audio mixing</p>
+                        <div class="progress-bar">
+                            <div class="progress-fill bg-pink-600" style="width: 80%;"></div>
+                        </div>
+                        <div class="flex justify-between mt-2">
+                            <span class="text-xs text-gray-400">Proficiency</span>
+                            <span class="text-xs font-medium">80%</span>
+                        </div>
+                    </div>
+                    
+                    <!-- DaVinci Resolve Slider Card -->
+                    <div class="slider-card skill-card rounded-xl p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 rounded-lg bg-green-600 flex items-center justify-center mr-4">
+                                <div class="skill-icon text-2xl font-bold text-white">Dr</div>
+                            </div>
+                            <h3 class="text-xl font-semibold">DaVinci Resolve</h3>
+                        </div>
+                        <p class="text-gray-300 mb-4">Professional color grading, editing, and visual effects</p>
+                        <div class="progress-bar">
+                            <div class="progress-fill bg-green-600" style="width: 75%;"></div>
+                        </div>
+                        <div class="flex justify-between mt-2">
+                            <span class="text-xs text-gray-400">Proficiency</span>
+                            <span class="text-xs font-medium">75%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slider Navigation -->
+                <button class="slider-btn prev absolute top-1/2 -left-4 transform -translate-y-1/2 w-12 h-12 rounded-full bg-white bg-opacity-10 flex items-center justify-center text-white focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                    </svg>
+                </button>
+                <button class="slider-btn next absolute top-1/2 -right-4 transform -translate-y-1/2 w-12 h-12 rounded-full bg-white bg-opacity-10 flex items-center justify-center text-white focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="slider.js"></script>
+</body>
+</html>
+    
+   
