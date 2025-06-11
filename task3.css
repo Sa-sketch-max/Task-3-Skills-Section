@@ -1,0 +1,99 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    color: #fff;
+    min-height: 100vh;
+}
+
+.skill-card {
+    transition: all 0.3s ease;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.skill-card:hover .skill-icon {
+    transform: scale(1.1);
+}
+
+.skill-icon {
+    transition: all 0.3s ease;
+}
+
+.progress-bar {
+    height: 8px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    position: relative;
+}
+
+.progress-fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 4px;
+    transition: width 1s ease-in-out;
+}
+
+.slider-container {
+    overflow: hidden;
+    position: relative;
+}
+
+.slider-track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slider-card {
+    flex: 0 0 auto;
+    width: 280px;
+    margin-right: 20px;
+}
+
+.slider-btn {
+    transition: all 0.3s ease;
+}
+
+.slider-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+}
+
+.tab {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tab.active {
+    border-color: #4f46e5;
+    background-color: rgba(79, 70, 229, 0.1);
+}
+
+.tab:hover:not(.active) {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.content-section {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: opacity 0.5s ease;
+}
+
+.content-section.active {
+    opacity: 1;
+    height: auto;
+}
